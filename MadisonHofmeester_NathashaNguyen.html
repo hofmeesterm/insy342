@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>INSY 341 Assignment 1</title>
+
+    <!-- Enabling MadisonHofmeester_NathasaNguyen js scripts-->
+    <script src="/Users/hofmeester/Desktop/MadisonHofmeester_NathashaNguyen.js"></script>
+
+
+</head>
+<body>
+
+    <h1>INSY 341 Assignment 1</h1>
+    <p>By: Madison Hofmeester and Nathasa Nguyen</p>
+    <hr>
+
+    <!-- Invoking Separate5Digits QUESTION 1 (same function)-->
+    <h2>Question 1</h2>
+    <script>
+        var x = prompt("Enter 5 digits from 0 to 9 below", "Type 5 digits here");
+        Separate5Digits(x);
+    </script>
+
+    <br>
+    <br>
+    <hr>
+
+    <!-- Invoking Separate5Digits QUESTION 2 (same function)-->
+    <h2>Question 2</h2>
+    <script>
+            var x = prompt("Enter 5 digits from 0 to 9 below", "Type 5 digits here");
+            Separate5Digits(x);
+    </script>
+
+    
+    <br>
+    <br>
+    <hr>
+ 
+
+     <!-- Invoking separateDigitsGeneric QUESTION 3 
+      NOTE: the first function argument is undefined here because a js prompt will define x -->
+     <h2>Question 3</h2>
+     <script>
+            var x = prompt("Enter some digits", "Enter digits here!");
+            separateDigitsGeneric(x,"#*");
+     </script>
+
+
+    <br>
+    <br>
+    <hr>
+
+
+     <!-- Invoking makeBox and makebox1 function QUESTION 4 
+      NOTE: the first function answers Q3 with &nbsp as spaces. This solution is dynamic but the spacing doesn't 
+      match up for higher dimensions (example: makeBox(100,100). To help combat this, I created a second function
+      maxBox1 that uses the "#" character to fill the box. Using a " " string does not work as browsers condense
+      spaces to one space. Please see this stack overflow Q&A: https://stackoverflow.com/questions/32970636/how-to-repeat-whitespace.
+      This is why I went with the semi-dynamic makeBox and then also made makeBox1 to dmeonstrate my understanding of padStart.
+)  -->
+    <h2>Question 4</h2>
+     <script>
+        makeBox(8,4);
+     </script>
+    <br>
+    <br>
+     <script>
+        makeBox1(15,15);
+     </script>
+
+
+    <br>
+    <br>
+    <hr>
+
+
+    <!-- Invoking makeDiamond QUESTION 5-->
+    <h2>Question 5</h2>
+     <script>
+        makeDiamond(5, "*", "-");
+     </script>
+
+
+    <br>
+    <br>
+    <hr>
+
+
+    <!-- Invoking middle QUESTION 6-->
+    <h2>Question 6</h2>
+    <script>
+     middle("homes");
+    </script>
+
+
+    <br>
+    <br>
+    <hr>
+
+
+    <!-- QUESTION 7-->
+    <h2>Question 7</h2>
+    <input type="text" value="Create password here" id="pw" style="width: 200px;">
+    <br>
+    <b>Note: passwords must include a lowercase letter, an uppercase letter and be longer than 8 characters.</b>
+    <br>
+    <button onclick="verify()">Create Password</button>
+
+
+    <br>
+    <br>
+    <hr>
+
+
+    <!-- Invoking removeNegatives QUESTION 8-->
+    <h2>Question 8</h2>
+    <script>
+    removeNegatives([1,-2,-2,-2,-3,5,3,-5])
+    </script>
+
+
+
+</body>
+</html>
